@@ -1,0 +1,16 @@
+{% extends 'baza.html' %}
+
+{% block wynik %}
+
+    {% if film_wybrany %}
+
+        <h1> {{ film_wybrany.nazwa }} </h1>
+        <p class="m-5"> {{ film_wybrany.opis }} </p>
+
+    {% else %}
+
+        <p>ERROR 404 - nie znaleziono filmu</p>
+
+    {% endif %}
+
+{% endblock %}
